@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>..::|Fotos - KnowOurSelves|::..</TITLE>
+</HEAD>
+<BODY bgcolor="#003366">
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+// Handle all the the FSCommand messages in a Flash movie
+function flashfotos_DoFSCommand(command, args) {
+  var flashfotosObj = InternetExplorer ? flashfotos : document.flashfotos;
+  //
+  // Place your code here...
+  //
+}
+// Hook for Internet Explorer 
+if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && 
+	  navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('Sub flashfotos_FSCommand(ByVal command, ByVal args)\n');
+	document.write('  call flashfotos_DoFSCommand(command, args)\n');
+	document.write('end sub\n');
+	document.write('</SCRIPT\> \n');
+}
+//-->
+</SCRIPT>
+<!-- URL's used in the movie-->
+<!-- text used in the movie-->
+<!--Carregando --><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ ID=flashfotos WIDTH=450 HEIGHT=510>
+ <PARAM NAME=movie VALUE="flashfotos.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#003366> <EMBED src="flashfotos.swf" menu=false quality=high bgcolor=#003366  WIDTH=450 HEIGHT=510	swLiveConnect=true NAME=flashfotos TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+</BODY>
+</HTML>

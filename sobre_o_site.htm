@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>sobre o site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#000033" text="#FFFFFF" background="Filme1.jpg" link="#0099CC" vlink="#00FFFF" alink="#0099FF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center"> 
+  <p><img src="Logo%20sobre%20o%20site.jpg" width="159" height="19"> 
+    <style>A:link {
+	COLOR: #0099CC; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #00FFFF; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #0099FF; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+</style>
+  </p>
+  <p><font color="#CC9900">Entaum bateu uma curiosidade de saber como o site foi 
+    feito!?!<br>
+    Bom eu e o Rafael(Deep_chest), que criamos e desenhamos o site e tals,(por 
+    isso que fico uma bosta, rs...)<br>
+    Zuera na humilde agora o site fico uma nota 7,5 pur ai... haha.<br>
+    Bom n&oacute;s usamos somente ferramenta da Macromedia, entuam valew ai Macromedia 
+    por existir... rs..<br>
+    Usamos Flash, Dreamweaver, Fireworks, Freehand(bem pokim mas usamos). Eh isso 
+    ae...<br>
+    Bom se alguem tive d&uacute;vida, cr&iacute;tica(construtiva) ou sugest&atilde;o... 
+    entra ai em contato</font> <a href="mailto:knowourselves@hotmail.com">knowourselves@hotmail.com 
+    </a>.<br>
+    <font color="#CC9900">Bom acho que eu jah falei tudo que tinha pra fala... 
+    a naum quase que eu esque&ccedil;o, eh bom todo mundo tah com o(s) plug-in(s) 
+    em dia haha, sen&atilde;o vcs naum vaum ver um monti de coisa... <br>
+    E aqui vai o Gera-Nick, que naum eh nenhuma novidade neh:!!<br>
+    depois vcs tirem os -=| |=- dos seus nicks...</font><br>
+    <br>
+    <br>
+  </p>
+</div>
+         <form name=form1>
+      <div align=center> 
+        <center>
+          
+      <p><font color=#000000><font face=Arial size=2><strong><font face="Verdana, Arial, Helvetica, sans-serif" color="003366">Atual:</font></strong></font><font face="Courier New,Courier" 
+size=2><b>&nbsp;</b></font> 
+        <input name=entrada size=40>
+            <font 
+face="Courier New,Courier" size=2></font></font></p>
+        </center>
+      </div>
+      <div align=center> 
+        <center>
+          
+      <p><font color=#000000><font face=Arial 
+size=2><strong><font face="Verdana, Arial, Helvetica, sans-serif" color="003366">Novo:</font></strong></font><b><font face="Courier New,Courier" 
+size=2>&nbsp; 
+        <input name=saida size=40>
+            </font></b> </font></p>
+        </center>
+      </div>
+    </form>
+    
+<p align=center> 
+  <input onClick=execNickNamer() type=button value="Criar Novo Nick !!!" name="button">
+  <script language=JavaScript><!--
+
+
+	var y=0;
+	var campoCheio=null;
+
+function converter(n) {
+	if(n=='A') n='Å';
+	if(n=='a') n='ä';
+	if(n=='B'||n=='b') n='ß';
+	if(n=='C') n='©';
+	if(n=='c') n='¢';
+	if(n=='D') n='Ð';
+	if(n=='d') n='ð';
+	if(n=='E') n='Ë';
+	if(n=='e') n='ë';
+	if(n=='f'||n=='F') n='|=';
+	if(n=='H'||n=='h') n='|-|';
+	if(n=='I') n='Î'; 
+	if(n=='i') n='¡';
+	if(n=='L'||n=='l') n='£';
+	if(n=='m'||n=='M') n='(\/)';
+	if(n=='N') n='Ñ';
+	if(n=='n') n='ñ';
+	if(n=='o') n='ö';
+	if(n=='O') n='Ø';
+	if(n=='p'|| n=='P') n='Þ';
+	if(n=='r'|| n=='R') n='®';
+	if(n=='s'|| n=='S') n='§';
+	if(n=='t'|| n=='T') n='†';
+	if(n=='u') n='µ';
+	if(n=='U') n='Ü';
+	if(n=='v'||n=='V') n='\/';
+	if(n=='Y') n='¥';
+	else n=n
+	return n
+}
+
+function chgNick() {   
+	var enter='';
+	var out='';             
+	var output='';
+   var enter=document.form1.entrada.value;
+	var out=document.form1.saida.value;
+   if(enter!='') {
+   	campoCheio=true;
+      for(var i=0;i<enter.length+1;i++) 
+			output+=converter(enter.charAt(i));
+      saida1='-=|'+output+'|=-'; }
+   if(enter==''&&document.form1.saida.value!='') {
+		alert('Me dê a pergunta, e não a resposta !!!');
+		campoCheio=false; }
+   if(out==''&&enter=='') {
+		alert('Preencha o primeiro campo !!!');
+		campoCheio=false; }                                
+}
+
+function mostrarNick() {
+	if(campoCheio) {
+   	document.form1.saida.value=saida1.substring(0,y);
+      y++;
+      tempo=setTimeout('mostrarNick()',100);
+      if(y==saida1.length+1) clearTimeout(tempo); }
+}
+
+function execNickNamer() {
+	chgNick();
+   if(campoCheio) mostrarNick();
+	enter='';
+	out='';
+}
+// --></script>
+</body>
+</html>

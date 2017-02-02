@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta http-equiv=Content-Type content="text/html;  charset=ISO-8859-1">
+<TITLE>index2</TITLE>
+</HEAD>
+<BODY bgcolor="#000066">
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+// Handle all the the FSCommand messages in a Flash movie
+function index2_DoFSCommand(command, args) {
+  var index2Obj = InternetExplorer ? index2 : document.index2;
+  //
+  //
+tremida = <!-- Begin
+netscape = (navigator.appName == "Netscape");
+n4 = netscape && (parseInt(navigator.appVersion) >= 4);
+explorer = (navigator.appName == "Microsoft Internet Explorer");
+ie4 = explorer && (parseInt(navigator.appVersion) >= 4);
+
+function terremoto(n){
+if(n4 || ie4) {
+for(i = 20; i > 0; i--) {
+for(j = n; j > 0; j--) {
+self.moveBy(0,i)
+self.moveBy(i,0)
+self.moveBy(0,-i)
+self.moveBy(-i,0)
+			}
+		}
+	}
+}
+// End>
+terremoto = terremoto(1)
+  //
+}
+// Hook for Internet Explorer 
+if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && 
+	  navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('Sub index2_FSCommand(ByVal command, ByVal args)\n');
+	document.write('  call index2_DoFSCommand(command, args)\n');
+	document.write('end sub\n');
+	document.write('</SCRIPT\> \n');
+}
+//-->
+</SCRIPT>
+<!-- URL's used in the movie-->
+<A HREF=http://www.knowourselves.kit.net/site.html></A> <!-- text used in the movie-->
+<!--        Design by Rodrigo & RafaelRodrigoo tattoRafaelDeep Chest--><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+ ID="index2" WIDTH="750" HEIGHT="400" ALIGN="">
+ <PARAM NAME=movie VALUE="index2.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000066> <EMBED src="index2.swf" menu=false quality=high bgcolor=#000066  WIDTH="750" HEIGHT="400" swLiveConnect=true ID="index2" NAME="index2" ALIGN=""
+ TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+</OBJECT>
+</BODY>
+</HTML>
